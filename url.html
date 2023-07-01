@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL SHORTENER</title>
+    <link rel="stylesheet" href="url.css">
+    <script src="url.js"></script>
+</head>
+<body>
+    <div class="registration-section">
+        <h2>Create an Account</h2>
+        <form id="registration-form" onsubmit="registerUser(event)">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="name" required placeholder="Ali">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="name" required placeholder="Yahyabadi">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="sth@gmail.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Use at least 8 characters.">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="repeat your password here.">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+<!--<div class="login-section">-->
+<!--    <h2>Login</h2>-->
+<!--    <form id="login-form" onsubmit="loginUser(event)">-->
+<!--        <label for="username">Username:</label>-->
+<!--        <input type="text" id="username" name="username" required>-->
+
+<!--        <label for="password">Password:</label>-->
+<!--        <input type="password" id="password" name="password" required>-->
+
+<!--        <button type="submit">Login</button>-->
+<!--    </form>-->
+<!--</div>-->
+    <div class="link-shortener-section">
+        <h2>Link Shortener</h2>
+        <form id="shorten-link-form" onsubmit="shortenLink(event)">
+            <label for="original-link">Original Link:</label>
+            <input type="text" id="original-link" name="original-link" required>
+
+            <button type="submit">Shorten</button>
+        </form>
+        <div id="shorten-link-message"></div>
+    </div>
+
+</body>
+</html>
